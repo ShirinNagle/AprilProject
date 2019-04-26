@@ -1,14 +1,30 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Home
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+<ion-content class="bgCol" padding>
+  
+  <h5 class="headings">Paintings from the Rijks Museum</h5>
+  <p></p>
+  <ion-img width="275" height="275" src="https://mymodernmet.com/wp/wp-content/uploads/2018/03/rembrandt-paintings-2.jpg">
+  </ion-img>
+  <br>
+  <p class="text">
+    Painting title: Self portrait
+    <br>
+    Artist: Rembrandt
+    <br>
+    An app showing a selection of the most popular paintings from the Rijks Museum.
   </p>
+  <p>
+    
+  <button class="buttons"ion-button round (click)="goToCollection()">Collection</button>
+  <button class="buttons"ion-button round (click)="goToMore()">More</button>
+  
+ </p>
 </ion-content>
+

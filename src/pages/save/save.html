@@ -1,0 +1,35 @@
+<!--
+  Generated template for the SavePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>save</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="bgCol" padding>
+<h6 class="headings">Save the title of your favourite picture</h6>
+<br>
+<br>
+<!--Code for Data persistance  using ngModel-->
+<ion-item>
+  <ion-input class="iconCol" [(ngModel)]="inputtext" placeholder="Type the title of the painting"></ion-input>
+</ion-item>
+<br>
+<br>
+<button class ="buttons" ion-button round (click) ="saveTitle()">Save Title</button>
+<button class ="buttons"ion-button round (click) ="showTitle()">Show Title</button>
+
+<br>
+<br>
+
+
+<button class="buttons" ion-button round (click)="goHome()">Home</button>
+<button class="buttons" ion-button round (click)="goToCollection()">Collection</button>
+<button class="buttons" ion-button round (click)="goToSavedTitlesPage()">Saved Titles Page</button>
+<button class="buttons"ion-button round (click)="goToMore()">More</button>
+
+</ion-content>

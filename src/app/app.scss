@@ -14,3 +14,26 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.bgCol {
+    background-color: lightgray;
+  }
+  .buttons{
+    color: white;
+    background-color: darkgray;
+        
+  }
+  .headings{
+    color:white;
+  }
+  :root{
+    background-color: lightgray;
+    --ion-text-color: white;
+  }
+  .iconCol{
+    color: darkgray;
+  }
+  .text{
+    text-align: center;
+    color:white;
+  }
+ 

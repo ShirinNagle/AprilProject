@@ -1,0 +1,66 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>more</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="bgCol" padding>
+    <h1 class="headings">More Information</h1>
+
+    <!--Code for ion card from ionics website-->
+    <ion-card>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Rijksmuseum_Amsterdam_ca_1895_rotated.jpg">
+              
+        <ion-item>
+          <ion-icon name="color-palette" class="iconCol" item-start large></ion-icon>
+          <h2 class="iconCol">Rijks Museum</h2>
+          <p>Rijksmuseum</p>
+          <p> Museumstraat 1</p>
+              <p>1071 XX Amsterdam</p>
+              <p>Telephone: +31 (0) 20 6747 000</p>
+        </ion-item>
+      
+        <ion-item>
+          <ion-icon name="wine" class="iconCol" item-start large ></ion-icon>
+          <p>Available on site</p>
+        </ion-item> 
+        <ion-item>
+          <ion-icon name="restaurant" class="iconCol" item-start large></ion-icon>
+          <p>Available on site</p>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="cafe" class="iconCol" item-start large ></ion-icon><p>Available on site</p>
+          
+        </ion-item>
+      
+        <ion-item>
+            <ion-icon name="subway" class="iconCol" item-start large></ion-icon><p>Stop: Vijzelgracht</p>
+        </ion-item>
+        <ion-item>
+            <ion-icon name="bus" class="iconCol" item-start large></ion-icon><p>288 (Rijksmuseum bus stop)</p>
+        </ion-item>
+        <ion-item>
+        <ion-icon name="home"(click)="goToHome()" class="iconCol" item-start large></ion-icon><p>Home Page</p>
+      </ion-item>
+        
+      
+      </ion-card>
+
+
+<!--The code below is not working, leaving it in to resolve at a later date-->
+    <ion-list>
+    <ion-item *ngFor="let c of calendar">
+
+        <h2>{{c.date}}</h2>
+        
+        
+        <h2>{{c.exposition}}</h2>
+        </ion-item>
+      </ion-list>
+        
+         
+          
+          
+</ion-content>
